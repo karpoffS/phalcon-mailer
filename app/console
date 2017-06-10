@@ -1,0 +1,48 @@
+#!/bin/bash
+
+
+if [ -z "$1" ]; then
+    echo -e "Вы не ввели ничего !";
+    exit 1;
+fi;
+
+if [ $1 = "clear" ]; then
+
+    if [ -z "$2" ]; then
+        echo "Вы не ввели цель очищения:";
+        echo "cache - для очистки шаблонизатора и кеша моделей";
+        echo "acl - для сброса кеша привелегий";
+        echo "";
+        exit 1;
+    fi;
+
+    if [ $2 = "cache" ]; then
+            echo "Clearing cache..."
+    fi
+
+    if [ $2 = "acl" ]; then
+        echo "Clearing ACL...";
+    fi
+
+    echo -n "Продолжить? (y/n) ";
+    read item
+    case "$item" in
+        y|Y) echo "Ввели «y», продолжаем...";
+            ;;
+        n|N) echo "Ввели «n», завершаем...";
+            exit 0;
+            ;;
+        *) echo "Ничего не ввели. Завершаем...";
+            exit 0
+            ;;
+    esac
+
+    if [ $2 = "cache" ]; then
+        rm -fRv app/cache/volt/*
+        rm -fRv app/cache/metaData/*
+    fi
+
+    if [ $2 = "acl" ]; then
+        rm -fRv app/cache/acl/*
+    fi
+fi

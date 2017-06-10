@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	text-rendering: optimizelegibility;
+	font-weight: lighter;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: inherit;
+}
+
+div.remember {
+	margin-top: 7px;
+	color: #969696;
+}
+
+div.remember label {
+	padding-top: 15px;
+}
+
+div.forgot {
+	margin-top: 7px;
+	color: #dadada;
+}
+
+.footer {
+    /*background: url("../img/feature-gradient.png") no-repeat scroll center 100%;*/
+    /*color: #B7B7B7;*/
+    font-size: 0.95em;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+table.signup td {
+	padding: 10px;
+}
+
+table.signup .alert {
+	margin-bottom: 0;
+    margin-top: 3px;
+}
+
+table.perms select {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+table.perms label {
+	margin-right: 10px;
+}
+
+div.main-container {
+	min-height: 450px;
+}

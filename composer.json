@@ -1,0 +1,27 @@
+{
+    "name": "karpoffS/phalcon-base-app",
+    "description": "This is a base application for the Phalcon PHP Framework",
+    "version": "1.0.0",
+    "keywords": [
+        "phalcon",
+        "framework",
+        "base app"
+    ],
+    "type": "application",
+    "license": "BSD-3",
+    "require": {
+        "php": ">=5.4",
+        "ext-phalcon": ">=1.2.4",
+        "phalcon/incubator": "^2.0",
+        "swiftmailer/swiftmailer": "^5.4",
+        "redound/phalcon-rest": "^1.4",
+        "stanislav-web/phalcon-ulogin": "^1.0",
+        "jeremeamia/SuperClosure" : "~1.0",
+        "mustangostang/spyc": "^0.5.1",
+        "kartik-v/bootstrap-fileinput": "dev-master",
+        "stanislav-web/phalcon-uploader": "dev-master",
+        "FortAwesome/Font-Awesome": "^4.6",
+        "fabfuel/prophiler": "^1.5",
+        "egulias/email-validator": "~2.1"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "application" : {
+    "title" : { "Hello world" },
+    "copyright" : { "&copy; 2001-{currentYear, date, Y}. Foobar" }
+  }
+}
